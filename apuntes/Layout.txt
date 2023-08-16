@@ -1,0 +1,21 @@
+Vamos a crear dos columnas.
+
+una al 55% y otra al 45% 
+
+de ahí, vamos a usar y definir las filas, que son 3 (sin salir del contenedor principal)
+
+la primer fila pudiera ser del 20%, la segunda (de en medio de arriba hacia abajo) de un 50% y el tercero, (la de hasta abajo) del restante, que sería un 30% 
+
+-vamos a dividir y dar nombre a las filas 
+la priera la llamaremos nav 
+
+(el contenedor donde irá nuestro superman será un 'aside')
+
+debajo del nav, le pondremos "section" y hasta abajo (donde irán los demás super héroes) será un footer 
+
+(buscr la herramienta 'ColorZilla'esta nos va a servir para sacar los colores que querramos buscar o tomar de ejemplo de una página)
+
+
+---OJO---
+DEBES OBSERVAR LA INTERFAZ DEL EJEMPLO AL HACERLO PASO A PASO 
+

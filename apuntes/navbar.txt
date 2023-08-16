@@ -1,0 +1,4 @@
+Vamos a crear y construir nuestro navbar y hacer la animación de bajar justo después de haber cargado nueso loader 
+
+--- Vamos a colocar nuestro navbar arriba del loader ---
+ 

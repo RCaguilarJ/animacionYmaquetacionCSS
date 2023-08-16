@@ -1,0 +1,41 @@
+1.-checar dónde maquetamos el loader en el html 
+
+en el section, debemos tener 3 div's vacios 
+
+  El z-index es una propiedad CSS que se utiliza para controlar el orden de apilamiento de elementos posicionados en una página web. Cuando los elementos tienen una posición establecida (por ejemplo, absolute, relative o fixed) y se superponen entre sí, el z-index determina qué elemento aparece encima de los demás
+
+
+  animation: loader 2s linear forwards; /*aquí le decimos que a la clase "loader" le demos la animación para que dure 2 segundos y termine en la posición o estado final   */
+
+
+ vamos a usar llaves (llamadas Keyframes) para la clase llamada loader y vamos a dividir los tiempos de los segundos en porcentajes. La sintaxis es de esta manera 
+
+
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* el 'opacity' es para "suavizar, opacar o verse tansparente " la imagen o animación  */
+
+/*El 'visibility' es para que se vea o se deje de ver. Esto es importante porque si el loader no se deja de ver, no nos va a dejar dar paso a la siguiente acción que es el contenedor (hidden es para que se deje de ver)*/
+
+
+
+  animation: scaling 2s ease-in-out infinite; /* animar los 3 puntitos del loader para que crezcan (escalen durante 2 segundos) . ease-in-out infinite esto sirve para que se haga un ciclo infinito con la animación dellouder durante los segundo que le dimos de rango.*/
+(checar apuntes en el main.css)
+
+
+
+

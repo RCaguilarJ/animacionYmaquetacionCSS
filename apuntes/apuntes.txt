@@ -1,0 +1,15 @@
+Vamos a elaborar animaciones a partir del loading al ingresar a la página 
+
+
+primero, vamosa a analizar la manera de estructurar el html 
+
+
+vamos a hacer uso de un nav, un main y un footer. todo que no supere el 55% a lo ancho de la página además de un side para poner la "imagen" que iría en la página (tomando en cuenta el proyecto qu vamos a elaborar)
+
+vamos a usar ul, li, p, h1, div con img etc, etc.
+
+
+---OJO!!!---
+Analizar bien la relación de la estrctura html en código con el resultado 
+
+

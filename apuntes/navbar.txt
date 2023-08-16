@@ -1,4 +1,48 @@
 Vamos a crear y construir nuestro navbar y hacer la animación de bajar justo después de haber cargado nueso loader 
 
---- Vamos a colocar nuestro navbar arriba del loader ---
+--- Vamos a colocar nuestro navbar y navbar-content arriba del loader ---
  
+ 
+ -ojo-
+
+ hay que poner atenión e identificar todos los .navbar que vienen en el código de ejemplo 
+
+
+
+.navbar {
+  background-color: pink;
+  grid-area: nav;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 80px;
+}
+
+.navbar-content img {
+  width: 50px;
+}
+
+.navbar-content ul {
+  display: flex;
+  justify-content: space-evenly; /* espacio entre los ul*/
+  list-style: none; /* quitar las bolitas de la lista */
+  padding: 0;
+  width: 450px;
+}
+
+.navbar-content ul li a {
+  text-decoration: none;
+}
+
+
+
+La propiedad grid-area en CSS se utiliza en el contexto de CSS Grid Layout para definir el tamaño y la ubicación de un área en una cuadrícula creada mediante el sistema de diseño de cuadrícula (CSS Grid). Permite asignar un nombre a una celda o un grupo de celdas en la cuadrícula y luego usar ese nombre en lugar de coordenadas (fila y columna) para colocar elementos en la cuadrícula.
+
+La propiedad grid-area se utiliza en combinación con otras propiedades relacionadas con CSS Grid, como grid-template-areas, grid-template-columns, grid-template-rows, etc.
+
+
+---OJO!!!!---
+En este paso los li no son responsive 

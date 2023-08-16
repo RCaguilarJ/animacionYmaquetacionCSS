@@ -2,3 +2,5 @@
 2.- Maquetación del loader
 3.- Layout
 4.- navbar
+5.- main-content 
+

@@ -45,7 +45,7 @@
           </p>
         </section>
         <section class="side-content">
-          <div  ></div>
+          <div></div>
           <p>Superman</p>
           <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="superman" />
           <!-- este div va vacio -->
@@ -55,10 +55,10 @@
           <div id="button1">
             <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="spiderman" />
           </div>
-          <div >
+          <div id="button2">
             <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="robin" />
           </div>
-          <div >
+          <div id="button3">
             <img src="https://i.ibb.co/M18p91c/batman.webp" alt="batman" />
           </div>
         </section>
@@ -71,13 +71,73 @@
         <div></div>
       </section>
       <!-- Modal -->
-      <section class="modal hidden "></section>
-      <div class="modal_content">
-        <img src="https://iconos8.es/icon/EYnXuvqJDgzX/eliminar" alt="close">
-      </div>
-    </div>
+      <section class="modal hidden">
+        <div class="modal_content">
+          <img
+            class="modal_content_close"
+            src="./icons/close_FILL0_wght400_GRAD0_opsz48.png"
+            alt="close"
+          />
 
-    <script src="index.js" >
-    </script>
+          <div class="modal_content_slider">
+            <input type="radio" name="slider-1" id="radio-1" checked />
+            <input type="radio" name="slider-1" id="radio-2" />
+            <input type="radio" name="slider-1" id="radio-3" />
+
+            <div class="cards">
+              <label for="radio-1" id="card-1" class="card">
+                <img
+                  src="https://i.pinimg.com/originals/a6/57/24/a6572497d91badc608615e399fdc3444.png"
+                  alt=""
+                />
+              </label>
+              <label for="radio-2" id="card-2" class="card">
+                <img
+                  src="https://i.ebayimg.com/images/g/v2kAAOSwggJeucA8/s-l400.png"
+                  alt=""
+                />
+              </label>
+              <label for="radio-3" id="card-3" class="card">
+                <img
+                  src="https://i.pinimg.com/originals/c6/6a/a1/c66aa1652c932d038a0d8afcf2b3e6b7.png"
+                  alt=""
+                />
+              </label>
+            </div>
+          </div>
+          <button>I want it!</button>
+        </div>
+      </section>
+    </div>
   </body>
+  <script>
+    const modal = document.querySelector(".modal");
+    const button1 = document.querySelector("#button1");
+    const button2 = document.querySelector("#button2");
+    const button3 = document.querySelector("#button3");
+    const closeButton = document.querySelector(".modal_content_close");
+    button1.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      modal.classList.add("visible");
+    });
+    button2.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      modal.classList.add("visible");
+    });
+    button3.addEventListener("click", () => {
+      // 1ra Forma
+      // modal.className = 'modal visible';
+      //2da Forma
+      // modal.style.display = 'grid';
+
+      modal.classList.remove("hidden");
+      modal.classList.add("visible");
+    });
+    closeButton.addEventListener("click", () => {
+      // modal.style.display = 'none';
+
+      modal.classList.remove("visible");
+      modal.classList.add("hidden");
+    });
+  </script>
 </html>

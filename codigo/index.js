@@ -1,13 +1,13 @@
 const modal = document.querySelector(".modal");
-const button = document.querySelector("#button1");
-const close = document.querySelector(".modal_content");
+const button1 = document.querySelector("#button1");
+const closeButton = document.querySelector(".modal_close_close");
 
-button.addEventListener("click", () => {
-  modal.classList.remove("hidden");
+button1.addEventListener("click", () => {
+  modal.classList.remove("hiddn");
   modal.classList.add("visible");
 });
 
-close.addEventListener("click", () => {
-  modal.classList.add("hidden");
+closeButton.addEventListener("click", () => {
   modal.classList.remove("visible");
+  modal.classList.add("hidden");
 });

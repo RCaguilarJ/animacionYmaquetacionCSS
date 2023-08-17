@@ -1,0 +1,67 @@
+Vamos por la parte de la clase 'side'
+
+vamos a rotar el texto 'superman' y asignarlo a la fila y la columna donde lo deseamos tener 
+
+.side-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  
+  align-items: center;
+
+  grid-area: aside;
+
+}
+
+.side-content p{
+  transform: rotate(-90deg);
+  font-size: 36px;
+  font-weight: 100;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  opacity: 0;
+  animation-name: side-content-text;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes side-content-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.side-content img{
+  width: 100%;
+  grid-column: 2 / 6; /*de la columna 2 a la 6 */
+  grid-row: 1 / 2; /*de la fila 1 a la 2 */
+
+  animation: 3s side-content-img 2s ease-in-out
+}
+
+@keyframes side-content-img {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.side-content div{
+
+  background-color: #ffd602;
+
+  grid-column: 4 / 7;
+  grid-row: 1 / 2;
+
+  height: 100%;
+}
+
+

@@ -1,0 +1,7 @@
+primero, modificar el modal que tenemos en el html 
+
+
+
+
+
+modal content (agregar x para salir del click )

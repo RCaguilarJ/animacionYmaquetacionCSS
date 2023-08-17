@@ -1,2 +1,46 @@
 el main-content lo vamos a colocar debajo del navbar 
 
+para dar espacio entre el navbar y el section tuvimos que darle un margin top de 20% (porque igual al ejemplo no nos salió )
+
+hicimos uso de las clases hijo (child) para los p y h1 
+
+.main-content {
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  margin-top: 20%;
+
+  animation: 4s main-content 2 ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.main-content p:first-child {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 -14px 44px;
+  font-family: sans-serif;
+}
+
+.main-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  font-family: sans-serif;
+}
+
+.main-content p:last-child {
+  font-weight: 100;
+  margin: 0;
+  width: 60%;
+}
+
+@keyframes main-content {
+  0% {
+    transform: translateY(-600px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

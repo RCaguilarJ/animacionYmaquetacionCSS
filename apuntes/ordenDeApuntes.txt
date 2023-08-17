@@ -3,4 +3,8 @@
 3.- Layout
 4.- navbar
 5.- main-content 
+6.- side-content
+7.-footer
+8.- agregarJS 
 
+.-resumen

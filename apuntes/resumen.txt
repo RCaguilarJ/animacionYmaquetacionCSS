@@ -1,0 +1,14 @@
+Este es un resumen de las propiedades de animation que hemos venido trabajando y para qué sirven:
+
+Aquí pondremos el nombre de nuestra animación y poder referenciarla en los keyframes
+animation-name: "name";
+Aquí pondremos el tiempo que queremos que tarde nuestra animación.
+animation-duration: "0.5s";
+Este será el tiempo que se tendrá para retardar la animación.
+animation-delay: 2.5s;
+Este será el tipo de aceleración que aplicaremos a nuestra animación.
+animation-timing-function: easy-in-out;
+Este nos indicará que queremos que vuelva al estado inicial con “forwards”
+animation-fill-mode: forwards;
+
+
